@@ -1,0 +1,71 @@
+
+
+ .-------------------------------------------------------------------------.
+ | Telnet Door 32 : Written by Michael Griffin (2003)  Build [Beta 6]      |
+ `-------------------------------------------------------------------------'
+
+  Released 03/15/2003 - Beta 6
+      Removed the Added Local Echo Detecton, Was causing a lot of problems      
+      Went back to a pre-beta 5 source but added all the graphic enhancements from
+      Beta 5.  Beta 7 I'm thinking of working in a Telnet Menu, To help keep
+      Things more smooth.   
+
+      Also added some extra error logging.  If there is a program start error, you can
+      open the (Td32-Error.log) Also a per node log is kept for the current connection
+      (Td32-Nodex.log) x being the node number the user started the program from.
+
+      If your having connection problems please email me the Td32-Nodex.log
+      with the IP and port that you are connecting to.
+
+
+  This is a Standalone DOOR32 Windows Program Only.  
+  This only works via Telnet Connections into the BBS.  
+
+  Feel free to send me any ideas or suggestions to improve your experience.
+
+
+ .-------------------------------------------------------------------------.
+ | Quick Setup and Initialization Instructions                             |
+ `-------------------------------------------------------------------------'
+
+  Very easy, all you need to do is pass ë3í command line parameters to the door.
+
+  1.  PATH to your door32.sys file
+
+  2.  IP or Hostname of BBS/MUD to connect to
+
+  3.  What port the HOST your connecting to is on (23) for Telnet
+
+
+  Example Command Line for use in Mystic BBS:
+  ---------------------------------------------------
+  Td32.exe C:\MYSTIC\TEMP%3\ 192.168.0.3 23
+  
+  or
+  
+  Td32.exe C:\MYSTIC\TEMP%3\ hostname.org 23
+
+
+
+  €€€‹‹‹   ‹ﬂﬂ€€‹      ‹‹‹€€€
+  €€€ ﬂﬂ€€€‹   €€€›‹€€€€› €€€
+  €€€ ∞ ﬁ€€€›ﬂﬂﬂﬂﬂﬁ€€€›ﬁ› €€€
+   ﬂﬂ ∞ ﬁ€€€› €€€ﬂﬁ€€€›   €€ﬂ
+  ∞∞    €€€€  €€€  €€€€ ∞
+  ±±     ﬂ€ﬂ ﬂ€€€‹ ﬂ€ﬂ     ∞∞
+  ≤≤                       ±±
+  €€ .:  n.e.m.e.s.i.s  :. ≤≤
+  €€‹    m.o.d.d.i.n.g     €€
+   ﬂﬂ€‹‹                   €€
+  $$    ﬂﬂﬂﬂﬂﬂ‹‹‹‹‹‹‹    ‹‹€€
+  $$ .: #NEM EFNET :. ﬂﬂﬂﬂﬂﬂﬂ
+
+  Any comments, questions, code donations, and 
+  bug reports you are  welcome to Contact me at 
+  
+  MrMisticismo@Hotmail.com 
+  or drop by #Mysticbbs on EFNet 
+
+  Michael Griffin [Mercyful Fate] (2003)
+  
+  

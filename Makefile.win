@@ -1,0 +1,41 @@
+# Project: Project1
+# Makefile created by Dev-C++ 4.9.7.8
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = Project1_private.res
+OBJ  = main.o wincon.o ansi.o tnmain.o $(RES)
+LINKOBJ  = main.o wincon.o ansi.o tnmain.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" ../../../../Dev-Cpp/lib/libwsock32.a 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/include/c++"  -I"C:/Dev-Cpp/include" 
+BIN  = Project1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS = $(INCS) 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Project1.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) $(LINKOBJ) -o "Project1.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+wincon.o: wincon.cpp
+	$(CPP) -c wincon.cpp -o wincon.o $(CXXFLAGS)
+
+ansi.o: ansi.cpp
+	$(CPP) -c ansi.cpp -o ansi.o $(CXXFLAGS)
+
+tnmain.o: tnmain.cpp
+	$(CPP) -c tnmain.cpp -o tnmain.o $(CXXFLAGS)
+
+Project1_private.res: Project1_private.rc 
+	$(WINDRES) -i Project1_private.rc -I rc -o Project1_private.res -O coff 

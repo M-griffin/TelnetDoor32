@@ -1,0 +1,34 @@
+  Released 03/09/2003 - Beta 1
+  
+  Released 03/10/2003 - Beta 2 - Fix Display output, missing escape sequences.
+  
+  Released 03/12/2003 - Beta 3 -
+      Added RFC Telnet Protocol, Connections to Linux server is now fixed as 
+      well as properly connecting to all BBS’s and or MUDS  Also added new 
+      Sysop Console Functions for toggling the display on and off. Local Display 
+      is still in early testing and will defiantly not be very good at the moment.  
+      Still need to add some more filtering to it.
+  
+  Released 03/12/2003 - Beta 4
+      Fixed Exception Error when hanging up from telnet out conenction.
+      Fixed up Sysop Interface a bit and updated various code.
+      Fixed local side reciving empty data and never ending scrolling,
+      but still need to fix parsing with more filtering. Solid Release though.
+
+  Released 03/14/2003 - Beta 5
+      Added Local Echo Detecton, Some muds don't echo back input,
+      Door will now detect and provide echo back to the user.
+      Some small various fixes
+
+  Released 03/15/2003 - Beta 6
+      Removed the Added Local Echo Detecton, Was causing a lot of problems      
+      Went back to a pre-beta 5 source but added all the graphic enhancements from
+      Beta 5.  Beta 7 I'm thinking of working in a Telnet Menu, To help keep
+      Things more smooth.   
+  
+      Also added some extra error logging.  If there is a program start error, you can
+      open the (Td32-Error.log) Also a per node log is kept for the current connection
+      (Td32-Nodex.log) x being the node number the user started the program from.
+  
+      If your having connection problems please email me the Td32-Nodex.log
+      with the IP and port that you are connecting to.
